@@ -12,6 +12,7 @@
    You should have received a copy of the GNU General Public License
    along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
+// Preprocessor directe: same purpose as include guards, but 
 #pragma once
 /*
   This is the main Sub class
@@ -737,6 +738,7 @@ public:
     void mainloop_failsafe_check();
 };
 
+// hal is const over whole scope.
 extern const AP_HAL::HAL& hal;
 extern Sub sub;
 
